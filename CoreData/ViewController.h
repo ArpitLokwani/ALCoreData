@@ -11,5 +11,12 @@
 @interface ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UITextField *name;
+@property (strong, nonatomic) IBOutlet UITextField *address;
+@property (strong, nonatomic) IBOutlet UITextField *phone;
+@property (strong, nonatomic) IBOutlet UILabel *status;
+- (IBAction)saveData:(id)sender;
+
+- (IBAction)findContact:(id)sender;
 @end
 
